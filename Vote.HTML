@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2566">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ja"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;多数決クイズシステム&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #444;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.team-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.team-container h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.person {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>select {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #4CAF50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #45a049;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;多数決クイズシステム&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="teams-container"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="calculateMajority()"&gt;多数決を実行&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="result" class="result"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const teamsCount = 8; // チーム数</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const membersPerTeam = 6; // 1チームの人数</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const choices = [1, 2, 3, 4]; // 選択肢</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// チームとメンバーのUIを生成する</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createTeamUI() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const container = document.getElementById("teams-container");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let team = 1; team &lt;= teamsCount; team++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const teamDiv = document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>teamDiv.className = "team-container";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>teamDiv.id = `team-${team}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>teamDiv.innerHTML = `&lt;h2&gt;チーム ${team}&lt;/h2&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>for (let member = 1; member &lt;= membersPerTeam; member++) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const memberDiv = document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>memberDiv.className = "person";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>memberDiv.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>メンバー${member}:</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="team${team}-member${member}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>${choices.map(choice =&gt; `&lt;option value="${choice}"&gt;${choice}&lt;/option&gt;`).join("")}</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>teamDiv.appendChild(memberDiv);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>container.appendChild(teamDiv);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 多数決で選択肢を決定する関数</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function calculateMajority() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let resultText = "";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let team = 1; team &lt;= teamsCount; team++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const votes = {}; // 投票カウント</p>
+<p class="p1"><span class="Apple-converted-space">                </span>choices.forEach(choice =&gt; votes[choice] = 0);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>for (let member = 1; member &lt;= membersPerTeam; member++) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const selectElement = document.getElementById(`team${team}-member${member}`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const vote = selectElement.value;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>votes[vote]++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// 多数決で最も票が多い選択肢を決定</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let majorityChoice = choices[0];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let maxVotes = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>for (const choice in votes) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (votes[choice] &gt; maxVotes) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>maxVotes = votes[choice];</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>majorityChoice = choice;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultText += `チーム ${team} の多数決の結果: 選択肢 ${majorityChoice}（${maxVotes}票）&lt;br&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById("result").innerHTML = resultText;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// ページ読み込み時にUIを生成</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.onload = createTeamUI;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
